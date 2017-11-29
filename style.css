@@ -33,8 +33,38 @@ nav ul{
 nav li{
 	padding: 5px;
 }
-nav a{
+.left{
+	float: left;
+}
+.right{
 	float: right;
+}
+nav a, nav a:hover, nav a:visited{
+	text-decoration: none;
+}
+nav a.try, nav a.try:visited, nav a.try:hover{
+	color: #FFFFFF;
+	text-align: center;
+	display: block;
+	padding: 5px;
+	background-color: #3F9BF8;
+	color: #FFFFFF;
+	width: 8em;
+	border-radius: 5px 0 0 5px;
+	border: 2px solid #3F4655;
+	margin: 20px 0 0 auto;
+}
+nav a.sign, nav a.sign:visited, nav a.sign:hover{
+	color: #FFFFFF;
+	text-align: center;
+	display: block;
+	padding: 5px;
+	background-color: #3F9BF8;
+	color: #FFFFFF;
+	width: 5em;
+	border-radius: 0 5px 5px 0;
+	border: 2px solid #3F4655;
+	border-left: none;
 }
 header{
 	grid-area: header;
