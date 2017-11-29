@@ -1,0 +1,189 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: #3F4655;
+	font-size: 16px;
+	font-family: 'sans-serif';
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 150px 300px 400px 600px 300px 600px 250px;
+	grid-template-areas: 
+		"nav"
+		"header"
+		"promises"
+		"jumbotron"
+		"pricing"
+		"users"
+		"contact"
+		"footer";
+}
+nav{
+	grid-area: nav;
+	display: flex;
+	flex-direction: row;
+	background-color: #E9EDF2;
+	align-items: baseline;
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+nav li{
+	padding: 5px;
+}
+nav a{
+	float: right;
+}
+header{
+	grid-area: header;
+	text-align: center;
+	background-color: #E9EDF2;
+}
+header h1{
+	color: #3F4655;
+	font-size: 1.5em;
+}
+.promises{
+	grid-area: promises;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	background-color: #3F4655;
+	padding: 0 100px;
+}
+.promises h2{
+	color: #FFFFFF;
+	font-size: 1.25em;
+}
+.promises p{
+	color: #AAAAAA;
+}
+.promises .tab{
+	width: 25%;
+	padding: 150px 5px 0 5px;
+	border-right: 1px solid black;
+}
+.promises .invoicing{
+	border: none;
+}
+.jumbotron{
+	grid-area: jumbotron;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 0 25%;
+	background-color: #E9EDF2;
+}
+.jumbotron a, .jumbotron a:hover, .jumbotron a:visited{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 5px;
+	background-color: #3F9BF8;
+	color: #FFFFFF;
+	width: 15em;
+	border-radius: 5px;
+	border: 2px solid #3F4655;
+	margin: 20px auto 0 auto;
+}
+.pricing{
+	grid-area: pricing;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 30px 25% 0 25%;
+}
+.plan_wrapper{
+	display: flex;
+	flex-direction: row;
+}
+.plan{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 5px;
+}
+.plan a{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 5px;
+	background-color: #3F9BF8;
+	color: #FFFFFF;
+	width: 10em;
+	border-radius: 5px;
+	border: 2px solid #3F4655;
+	margin: 20px auto 0 auto;
+}
+.monthly_plans{
+	width: 22em;
+}
+.users{
+	grid-area: users;
+	text-align: center;
+	background-color: #E9EDF2;
+}
+.users p, .users h1{
+	padding: 0 25%;
+}
+.contact{
+	grid-area: contact;
+	text-align: center;
+	padding: 0 25%;
+}
+.contact form{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	padding: 20px;
+	background-color: #E9EDF2;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+form input{
+	margin-bottom: 20px;
+}
+form input[type=submit]{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 5px;
+	background-color: #3F9BF8;
+	color: #FFFFFF;
+	width: 15em;
+	border-radius: 5px;
+	border: 2px solid #3F4655;
+	margin: 20px auto 0 auto;
+}
+.contact form p{
+	text-align: center;
+}
+footer{
+	grid-area: footer;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #3F4655;
+}
+footer h6{
+	color: #AAAAAA;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+footer ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+footer li{
+	color: #DDDDDD;
+}
+footer .list_wrapper{
+	margin: 0 15px;
+}
