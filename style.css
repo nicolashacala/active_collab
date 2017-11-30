@@ -24,6 +24,7 @@ nav{
 	flex-direction: row;
 	background-color: #E9EDF2;
 	align-items: baseline;
+	padding: 0 15px;
 }
 nav ul{
 	display: flex;
@@ -35,8 +36,11 @@ nav li{
 }
 .left{
 	float: left;
+	width: 20em;
+	margin-right: 200px;
 }
-.right{
+.right ul{
+	width: 20em;
 	float: right;
 }
 nav a, nav a:hover, nav a:visited{
@@ -55,12 +59,11 @@ nav a.try, nav a.try:visited, nav a.try:hover{
 	margin: 20px 0 0 auto;
 }
 nav a.sign, nav a.sign:visited, nav a.sign:hover{
-	color: #FFFFFF;
+	color: #3F4655;
 	text-align: center;
 	display: block;
 	padding: 5px;
-	background-color: #3F9BF8;
-	color: #FFFFFF;
+	background-color: #FFFFFF;
 	width: 5em;
 	border-radius: 0 5px 5px 0;
 	border: 2px solid #3F4655;
